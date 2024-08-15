@@ -51,7 +51,7 @@ func _ready():
 		_:
 			proj = preload("res://Towers/Projs/proj.tscn")
 
-func _process(_delta):
+func _process(delta):
 	match state:
 		0: #Bought
 			# checks if player can place the robot down
@@ -104,7 +104,7 @@ func _process(_delta):
 						var difference = fmod((angle_to_target).angle() - rotation, 2*PI)
 						var angle_dist = fmod(2 * difference, 2*PI) - difference
 						
-						rotation = move_toward(rotation, rotation+angle_dist, rotation_delta)
+						rotation = move_toward(rotation, rotation+angle_dist, rotation_delta*delta)
 						
 						# stops firing if target is too far away
 						if angle_dist < PI/6 and angle_dist > -(PI/6):
@@ -135,7 +135,7 @@ func _process(_delta):
 					Global.highlighted_tower = null
 				self_modulate = Color(0.38, 0.38, 0.38)
 				modulate = Color(1,1,1)
-		2: #Fuckin broke (Inactive)
+		2: #Inactive
 			if !deactivate_flag:
 				match type:
 					"SEBA":
