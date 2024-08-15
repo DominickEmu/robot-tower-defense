@@ -8,17 +8,28 @@ ArchOS
 - Cheap, rotates slow, shoots slow.
 - No additional effects.
 - Deativated on malfunction.
+  
 Gattling Golem
 - Expensive, fast rotation, firing rate accelerates for each consecutive shot.
 - On malfunction, fires a barage of projectiles before deactivating.
+  
 Jukebot
 - Slightly cheap. Fires in an area of effect, damaging enemies in a circle around itself. Shoots slow.
 - Increases damage of towers around itself.
 - Permanently increases damage of towers in huge area on malfunction.
+  
 Newtron
 - Slightly expensive, shoots fire darts that do constant damage to enemy for a short amount of time (aka inflicts the fire status effect on hit enemies).
 - Can only be placed in water.
 - Creates water tiles around itself on malfunction.
+  
 SEBA
 - Average price, shoots bombs that explode and damage in an area.
 - Tower itself explodes on malfunction, replacing ground with decorative dirt on surrounding tiles and creates a scorched tile in the center. No towers can be placed on that tile.
+
+
+Godot Engine Logo
+Copyright (c) 2017 Andrea Calabró
+
+This work is licensed under the Creative Commons Attribution 4.0 International
+license (CC BY 4.0 International): https://creativecommons.org/licenses/by/4.0/
