@@ -11,6 +11,7 @@ radius = 58.8889
 radius = 302.973
 
 [node name="Jukebot" type="Sprite2D" groups=["Jukebot"]]
+modulate = Color(0.12549, 0.462745, 0.737255, 1)
 self_modulate = Color(0.380392, 0.380392, 0.380392, 1)
 scale = Vector2(0.68, 0.68)
 texture = ExtResource("1_sofqa")
