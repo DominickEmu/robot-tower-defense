@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://djllc7fipi368"]
+[gd_scene load_steps=31 format=3 uid="uid://djllc7fipi368"]
 
 [ext_resource type="Texture2D" uid="uid://ceov27l8civ2q" path="res://icon.svg" id="1_fqs43"]
 [ext_resource type="PackedScene" uid="uid://xal0832scki6" path="res://Utilities/enemy_spawner.tscn" id="3_7qkxn"]
@@ -183,6 +183,13 @@ script = ExtResource("5_wd6mu")
 enemy = ExtResource("19_hgx1g")
 amount = 3
 spacing = 0.25
+next_wave = false
+
+[sub_resource type="Resource" id="Resource_2l8h3"]
+script = ExtResource("5_wd6mu")
+enemy = ExtResource("19_hgx1g")
+amount = 50
+spacing = 0.1
 next_wave = false
 
 [node name="Level0" type="Node2D"]
@@ -454,7 +461,7 @@ wave_array = Array[ExtResource("5_wd6mu")]([SubResource("Resource_fjwgc"), SubRe
 
 [node name="Wave3" parent="Spawners" instance=ExtResource("3_7qkxn")]
 position = Vector2(-158, 310)
-wave_array = Array[ExtResource("5_wd6mu")]([SubResource("Resource_wuipe")])
+wave_array = Array[ExtResource("5_wd6mu")]([SubResource("Resource_wuipe"), SubResource("Resource_2l8h3")])
 
 [node name="Enemies" type="Node2D" parent="." groups=["Enemies"]]
 
