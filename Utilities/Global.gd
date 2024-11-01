@@ -4,7 +4,7 @@ var bought_tower = null;
 var highlighted_tower = null;
 var tower_list = []
 
-@onready var money = 500;
+@onready var money = 1500;
 @onready var fuel = 5;
 @onready var wave = -1;
 @onready var curr_wave = null;

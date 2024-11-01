@@ -72,7 +72,7 @@ func update_gui():
 					butts[i].disabled = true
 					continue
 			"buff":
-				new_value = value*2
+				new_value = value+2
 				up_text = "Music Strength: "
 			"proj_lifespan":
 				new_value = value+0.01
